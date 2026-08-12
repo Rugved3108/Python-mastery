@@ -1,0 +1,11 @@
+sentence = input("Enter a sentence: ").strip().title()
+
+print("\n" + "=" * 8,"TEXT ANALYZER","=" * 8)
+print()
+print("Characters:",len(sentence))
+print("Words:", sentence.split())
+print("Python occurences:", sentence.count("python"))
+print("Uppercase:", sentence.upper())
+print("Lowercase:", sentence.lower())
+print("Reversed:", sentence[::-1])
+print("=" * 32)
