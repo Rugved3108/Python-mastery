@@ -1,5 +1,5 @@
 print("=" * 34)
-print("" * 12,"STUDENT MARKS MANAGER","" * 12)
+print("STUDENT MARKS MANAGER".center(34))
 print("=" * 34)
 print()
 marks = []
@@ -10,7 +10,7 @@ for i in range(n):
     marks.append(mark)
 
 print("\n" + "=" * 34 )
-print("" * 12, "RESULT", "" * 12)
+print("RESULT".center(34))
 print("=" * 34 )
 
 
