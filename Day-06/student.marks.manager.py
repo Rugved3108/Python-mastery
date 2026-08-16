@@ -1,24 +1,24 @@
 print("=" * 34)
-print("" * 12,"STUDENT MARKS MANAGER","" * 12)
+print("STUDENT MARKS MANAGER".center(34))
 print("=" * 34)
 print()
 marks = []
-n = int(input("Enter number of subjects:"))
+n = int(input("Enter number of subjects: "))
 print()
-for i in range(n):
-    mark = int(input("Enter marks for subject:"))
+for i in range(1,n+1):
+    mark = int(input(f"Enter marks for subject {i}: "))
     marks.append(mark)
 
 print("\n" + "=" * 34 )
-print("" * 12, "RESULT", "" * 12)
+print("RESULT".center(34))
 print("=" * 34 )
 
 
-print("marks:", marks)
-print("Total:", sum(marks))
-print("Average:", sum(marks) / len(marks))
-print("Highest:", max(marks))
-print("Lowest:", min(marks))
+print("marks: ", marks)
+print("Total: ", sum(marks))
+print("Average: ", sum(marks) / len(marks))
+print("Highest: ", max(marks))
+print("Lowest: ", min(marks))
 average = sum(marks) / len(marks)
 print("=" * 34)
 if average >= 90:
