@@ -1,4 +1,4 @@
-#🐍 Python Day 8 — Dictionaries
+# 🐍 Python Day 8 — Dictionaries
 ## 🎯 Learning Objectives
 
 By the end of Day 8, you should be able to:
