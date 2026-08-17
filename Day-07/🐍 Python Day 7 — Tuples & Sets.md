@@ -1,6 +1,5 @@
 # 🐍 Python Day 7 — Tuples & Sets
-
-## 1. What is a Tuple?
+1. What is a Tuple?
 
 A tuple is a collection of multiple values, similar to a list.
 
@@ -15,7 +14,7 @@ numbers = (10, 20, 30, 40)
 List:
 
 numbers = [10, 20, 30, 40]
-## 2. Creating a Tuple
+2. Creating a Tuple
 
 Tuples are usually created using parentheses ().
 
@@ -33,7 +32,7 @@ numbers = 10, 20, 30
 
 But using parentheses makes your code clearer.
 
-## 3. Tuple Indexing
+3. Tuple Indexing
 
 Tuples use indexing just like lists and strings.
 
@@ -61,8 +60,7 @@ print(numbers[-1])
 Output:
 
 40
-
-## 4. Tuple Slicing
+4. Tuple Slicing
 
 Tuples also support slicing.
 
@@ -80,8 +78,7 @@ Other examples:
 numbers[:3]     # (10, 20, 30)
 numbers[2:]     # (30, 40, 50)
 numbers[::-1]   # (50, 40, 30, 20, 10)
-
-## 5. Tuple is Immutable
+5. Tuple is Immutable
 
 Tuples cannot be changed after they are created.
 
@@ -109,8 +106,7 @@ List
 Tuple
 → Immutable
 → Cannot change
-
-## 6. Why Use Tuples?
+6. Why Use Tuples?
 
 Tuples are useful when you have data that should remain unchanged.
 
@@ -126,7 +122,7 @@ days = ("Monday", "Tuesday", "Wednesday")
 
 These values generally represent a fixed collection of information.
 
-## 7. len() with Tuples
+7. len() with Tuples
 
 Just like lists, len() tells us how many items are in a tuple.
 
@@ -138,7 +134,7 @@ print(len(numbers))
 Output:
 
 4
-## 8. Loop Through a Tuple
+8. Loop Through a Tuple
 
 A for loop can process each item.
 
@@ -154,7 +150,7 @@ Output:
 20
 30
 40
-## 9. .count()
+9. .count()
 
 .count() tells us how many times a value appears in a tuple.
 
@@ -175,7 +171,7 @@ means:
 
 Count how many times 20 appears.
 
-## 10. .index()
+10. .index()
 
 .index() tells us the position of the first occurrence of a value.
 
@@ -192,7 +188,7 @@ Remember:
 
 .index() returns the position, not the value itself.
 
-## 11. Tuple Challenge
+11. Tuple Challenge
 numbers = (10, 20, 30, 20, 40, 20)
 
 
@@ -203,8 +199,7 @@ Output:
 
 Number of 20s: 3
 Position of 40: 4
-
-## 12. What is a Set?
+12. What is a Set?
 
 A set is a collection of unique values.
 
@@ -215,8 +210,7 @@ numbers = {10, 20, 30, 40}
 Example:
 
 skills = {"Python", "Git", "HTML"}
-
-## 13. Sets Remove Duplicates
+13. Sets Remove Duplicates
 
 One of the most useful features of sets is that they automatically remove duplicate values.
 
@@ -245,8 +239,7 @@ Set:
 
 This is extremely useful for finding unique values.
 
-
-## 14. Sets Are Unordered
+14. Sets Are Unordered
 
 Sets do not maintain a reliable index order like lists.
 
@@ -261,8 +254,7 @@ You should not use indexing with sets.
 
 If you need an ordered collection with indexes, use a list.
 
-
-## 15. Creating a Set from a List
+15. Creating a Set from a List
 
 You can convert a list into a set.
 
@@ -283,8 +275,7 @@ List
 set()
   ↓
 Unique values
-
-## 16. len() with Sets
+16. len() with Sets
 
 len() tells us how many unique values are inside the set.
 
@@ -307,8 +298,7 @@ unique_numbers = set(numbers)
 
 print("Original count:", len(numbers))
 print("Unique count:", len(unique_numbers))
-
-## 17. Adding to a Set
+17. Adding to a Set
 
 Use .add() to add an item.
 
@@ -332,7 +322,7 @@ skills.add("Python")
 
 the set will still contain only one "Python".
 
-## 18. Removing from a Set
+18. Removing from a Set
 
 Use .remove() to remove an item.
 
@@ -348,8 +338,7 @@ Now:
 
 Python
 SQL
-
-## 19. Check if an Item Exists
+19. Check if an Item Exists
 
 Use in.
 
@@ -365,7 +354,7 @@ Python is present.
 
 This is similar to checking membership in a list.
 
-## 20. Set Union |
+20. Set Union |
 
 Union combines all unique values from two sets.
 
@@ -397,8 +386,7 @@ Python Git HTML Java SQL
 Think:
 
 | → Combine sets
-
-## 21. Set Intersection &
+21. Set Intersection &
 
 Intersection finds values that exist in both sets.
 
@@ -419,8 +407,7 @@ SQL
 Think:
 
 & → Common values
-
-## 22. Set Difference -
+22. Set Difference -
 
 Difference finds values that exist in the first set but not in the second.
 
@@ -441,8 +428,7 @@ HTML
 Think:
 
 - → Only in first set
-- 
-## 23. Set Operations Summary
+23. Set Operations Summary
 A | B
 → Union
 → Everything from both sets
@@ -470,8 +456,7 @@ A & B → {3}
 
 
 A - B → {1, 2}
-
-## 24. Tuple vs List vs Set
+24. Tuple vs List vs Set
 Feature	List	Tuple	Set
 Syntax	[]	()	{}
 Ordered	Yes	Yes	No reliable order
@@ -492,8 +477,7 @@ Tuple
 
 Set
 → I need unique values.
-
-## 25. Duplicate Remover
+25. Duplicate Remover
 
 Sets are excellent for removing duplicates.
 
@@ -540,9 +524,8 @@ Unique numbers:
 Original count: 6
 Unique count: 4
 Duplicates removed: 2
-
-# 🧪 Day 7 Exercises
-## Exercise 1 — Tuple Basics
+🧪 Day 7 Exercises
+Exercise 1 — Tuple Basics
 
 Create a tuple containing:
 
@@ -563,8 +546,7 @@ student = (your_name, your_age, your_favorite_programming_language)
 print("Name:", student[0])
 print("Age:", student[1])
 print("Language:", student[2])
-
-## Exercise 2 — Tuple Challenge
+Exercise 2 — Tuple Challenge
 
 Given:
 
@@ -579,8 +561,7 @@ Hint:
 
 numbers.count(20)
 numbers.index(40)
-
-## Exercise 3 — Remove Duplicates
+Exercise 3 — Remove Duplicates
 
 Given:
 
@@ -598,8 +579,7 @@ Challenge:
 Print the unique numbers in sorted order.
 
 print(sorted(unique_numbers))
-
-## Exercise 4 — Unique Words
+Exercise 4 — Unique Words
 
 Ask the user to enter a sentence.
 
@@ -618,7 +598,7 @@ print(unique_words)
 
 This removes repeated words.
 
-## Exercise 5 — Common Skills
+Exercise 5 — Common Skills
 
 Create two sets:
 
@@ -633,8 +613,7 @@ All skills
 print(student1 | student2)
 Skills only Student 1 knows
 print(student1 - student2)
-
-# 🚀 Day 7 Mini Project — Duplicate Remover
+🚀 Day 7 Mini Project — Duplicate Remover
 
 Build a program that:
 
@@ -680,8 +659,7 @@ print("Duplicates removed:",
 
 
 print("=" * 60)
-
-# 🧠 Day 7 Problem-Solving Pattern
+🧠 Day 7 Problem-Solving Pattern
 
 When you need to work with fixed data:
 
@@ -716,9 +694,8 @@ Set Operations
 Union / Intersection / Difference
   ↓
 Result
-
-#⚠️ Common Beginner Mistakes
-## Mistake 1 — Trying to modify a tuple
+⚠️ Common Beginner Mistakes
+Mistake 1 — Trying to modify a tuple
 
 Wrong:
 
@@ -729,7 +706,7 @@ numbers[0] = 100
 
 Tuples cannot be modified.
 
-## Mistake 2 — Expecting a set to have indexes
+Mistake 2 — Expecting a set to have indexes
 
 Wrong:
 
@@ -740,7 +717,7 @@ print(numbers[0])
 
 Sets do not support indexing.
 
-## Mistake 3 — Confusing {} with an empty set
+Mistake 3 — Confusing {} with an empty set
 
 This:
 
@@ -754,7 +731,7 @@ data = set()
 
 You will learn dictionaries in a later lesson.
 
-## Mistake 4 — Forgetting that sets remove duplicates
+Mistake 4 — Forgetting that sets remove duplicates
 numbers = {10, 20, 10, 30}
 
 
@@ -764,7 +741,7 @@ You won't get the duplicate 10.
 
 That's actually one of the main purposes of a set.
 
-# 🧠 Day 7 Key Takeaways
+🧠 Day 7 Key Takeaways
 tuple = (1, 2, 3)
 → Fixed collection
 
@@ -803,8 +780,7 @@ A - B
 
 x in collection
 → Check membership
-
-# 🎯 Day 7 Skill
+🎯 Day 7 Skill
 
 You can now choose the right collection based on the problem:
 
@@ -825,7 +801,7 @@ Duplicate Remover Mini Project
 
 This is an important step because you're moving from simply writing Python statements to choosing the right data structure for a problem.
 
-# 🚀 Progress
+🚀 Progress
  Day 1 — Python Basics
  Day 2 — Data Types & Operators
  Day 3 — Conditions & Decision Making

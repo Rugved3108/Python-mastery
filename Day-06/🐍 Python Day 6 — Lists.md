@@ -1,6 +1,6 @@
 # 🐍 Python Day 6 — Lists
 
-# 1. What is a List?
+1. What is a List?
 
 A list is a collection of multiple values stored in one variable.
 
@@ -14,8 +14,7 @@ names = ["Rugved", "Aman", "Rahul"]
 Lists can contain different data types:
 
 data = ["Rugved", 18, 5.8, True]
-
-# 2. List Indexing
+2. List Indexing
 
 Lists use indexes just like strings.
 
@@ -48,8 +47,7 @@ Useful:
 
 fruits[0]     # First item
 fruits[-1]    # Last item
-
-# 3. len() with Lists
+3. len() with Lists
 
 len() tells us how many items are inside a list.
 
@@ -68,8 +66,7 @@ students = ["Rugved", "Aman", "Rahul", "Priya"]
 
 
 print("Total students:", len(students))
-
-# 4. Changing a List Item
+4. Changing a List Item
 
 Lists are mutable, which means their values can be changed.
 
@@ -91,7 +88,7 @@ fruits[1]
 
 from "banana" to "orange".
 
-# 5. .append()
+5. .append()
 
 .append() adds an item to the end of a list.
 
@@ -110,8 +107,7 @@ Output:
 Think:
 
 append → add at the end
-
-# 6. .insert()
+6. .insert()
 
 .insert() adds an item at a specific position.
 
@@ -135,7 +131,7 @@ Output:
 
 "grapes" was inserted at index 1.
 
-# 7. .remove()
+7. .remove()
 
 .remove() removes a specific value from a list.
 
@@ -157,7 +153,7 @@ fruits.remove("banana")
 
 removes the value, not the index.
 
-# 8. del
+8. del
 
 del can remove an item using its index.
 
@@ -177,8 +173,7 @@ Difference:
 
 fruits.remove("banana")   # Remove by value
 del fruits[1]             # Remove by index
-
-# 9. Loop Through a List
+9. Loop Through a List
 
 A for loop can process every item in a list.
 
@@ -196,7 +191,7 @@ mango
 
 This is very important because loops + lists are used constantly in programming.
 
-# 10. Check if an Item Exists
+10. Check if an Item Exists
 
 Use the in operator.
 
@@ -219,8 +214,7 @@ if student_name in students:
     print("Student found!")
 else:
     print("Student not found.")
-    
-# 11. sum()
+11. sum()
 
 sum() calculates the total of numbers in a list.
 
@@ -232,8 +226,7 @@ print(sum(marks))
 Output:
 
 394
-
-# 12. max() and min()
+12. max() and min()
 
 max() finds the largest value.
 
@@ -253,8 +246,7 @@ print(min(marks))
 Output:
 
 65
-
-# 13. Calculating Average
+13. Calculating Average
 
 We can combine sum() and len().
 
@@ -273,8 +265,7 @@ Count = len(list)
 
 
 Average = Total / Count
-
-# 14. Lists + Conditions
+14. Lists + Conditions
 
 We can use loops and conditions together.
 
@@ -310,7 +301,7 @@ print(number)
 
 because number represents the current item.
 
-# 15. Building a List with append()
+15. Building a List with append()
 
 We can start with an empty list:
 
@@ -334,7 +325,7 @@ Output:
 
 This becomes very useful when taking multiple inputs from the user.
 
-# 16. Using a Loop to Build a List
+16. Using a Loop to Build a List
 
 Example:
 
@@ -375,8 +366,7 @@ Get input
 append()
        ↓
 Repeat
-
-# 17. Marks Analyzer
+17. Marks Analyzer
 
 We can use lists to analyze marks.
 
@@ -402,9 +392,7 @@ sum()
 len()
 max()
 min()
-
-# 18. List Methods You Should Know
-
+18. List Methods You Should Know
 Method / Function	Purpose
 len(list)	Number of items
 list.append(x)	Add to end
@@ -415,8 +403,7 @@ sum(list)	Total
 max(list)	Largest value
 min(list)	Smallest value
 x in list	Check existence
-
-# 19. Lists are Mutable
+19. Lists are Mutable
 
 A list can be changed after it is created.
 
@@ -441,9 +428,8 @@ String → Immutable
 
 You will learn more about this difference later.
 
-# 🧪 Day 6 Exercises
-
-## Exercise 1 — List Basics
+🧪 Day 6 Exercises
+Exercise 1 — List Basics
 
 Create a list of your favorite foods.
 
@@ -531,8 +517,7 @@ if student_name in students:
     print("Student found!")
 else:
     print("Student not found.")
-    
-## 🚀 Day 6 Mini Project — Student Marks Analyzer
+🚀 Day 6 Mini Project — Student Marks Analyzer
 
 Create an empty list and ask the user how many subjects they have.
 
@@ -572,7 +557,7 @@ elif average >= 60:
     print("Grade D")
 else:
     print("Grade F")
-## 🧠 Day 6 Problem-Solving Pattern
+🧠 Day 6 Problem-Solving Pattern
 
 For programs involving multiple values:
 
@@ -604,9 +589,8 @@ print result
 
 This pattern will become extremely useful when you start working with real-world data.
 
-## ⚠️ Common Beginner Mistakes
-
-# Mistake 1 — Comparing a value with the whole list
+⚠️ Common Beginner Mistakes
+Mistake 1 — Comparing a value with the whole list
 
 Wrong:
 
@@ -622,7 +606,7 @@ if student_name in students:
 
 in checks whether a value exists inside a collection.
 
-# Mistake 2 — Printing the whole list inside a loop
+Mistake 2 — Printing the whole list inside a loop
 
 Wrong:
 
@@ -641,7 +625,7 @@ for number in numbers:
 
     if number % 2 == 0:
         print(number)
-# Mistake 3 — Forgetting append()
+Mistake 3 — Forgetting append()
 
 Wrong:
 
@@ -662,8 +646,7 @@ number = int(input("Enter number: "))
 
 
 numbers.append(number)
-
-# Mistake 4 — Calculating average incorrectly
+Mistake 4 — Calculating average incorrectly
 
 Don't hard-code the number of values:
 
@@ -675,8 +658,7 @@ average = sum(numbers) / len(numbers)
 
 This works even when the list contains a different number of values.
 
-# 🧠 Day 6 Key Takeaways
-
+🧠 Day 6 Key Takeaways
 list = [...]           → Create a list
 list[index]            → Access an item
 list[-1]               → Last item
@@ -698,8 +680,7 @@ numbers = []
 for i in range(n):
     value = int(input("Enter value: "))
     numbers.append(value)
-    
-# 🎯 Day 6 Skill
+🎯 Day 6 Skill
 
 You can now build programs that:
 
@@ -716,7 +697,7 @@ Student Marks Analyzer
 
 Lists are one of the most important Python concepts, because they are the foundation for handling collections of data.
 
-# 🚀 Progress
+🚀 Progress
  Day 1 — Python Basics
  Day 2 — Data Types & Operators
  Day 3 — Conditions & Decision Making
