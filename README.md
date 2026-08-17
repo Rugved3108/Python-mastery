@@ -25,3 +25,11 @@ Become highly proficient in Python and build a strong foundation for software de
 - [ ] Testing
 - [ ] Professional Python
 - [ ] Python for AI
+
+# Steps to push it on GitHub
+## example
+git status
+git add Day-08
+git commit -m "Add Day 8 dictionaries"
+git pull --rebase origin master
+git push origin master
