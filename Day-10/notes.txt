@@ -1,0 +1,4 @@
+favorite programming language: python
+favorite_subject: maths
+goal: founder
+Day 10 completed!
